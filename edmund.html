@@ -1,0 +1,263 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edmund Azaare Adongo Anangura">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background: #f7f7f7;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #fff;
+            color: #2575fc;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.05);
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Aspirations Section */
+        .aspirations {
+            background: #f4f7fc;
+        }
+
+        .aspirations h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .aspiration-card {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .aspiration-card img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .aspiration-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .aspiration-info h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .aspiration-info p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .aspiration-info a {
+            background: #2575fc;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .aspiration-info a:hover {
+            background: #6a11cb;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact li {
+            margin: 15px 0;
+        }
+
+        .contact a {
+            font-size: 18px;
+            color: #2575fc;
+            transition: 0.3s ease;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Azaare Edmund Adongo Anangura</h1>
+        <p>Aspiring Web Developer | KNUST Student | An Achiever</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#aspirations">My Aspirations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <img src="eddy.jpg" alt="My picture">
+        <h2>My Bio</h2>
+        <p>My name is Edmund Azaare Adongo Anangura and I'm eighteen years of age.
+            I'm a level 100 KNUST student reading computer engineering. Making such 
+            a crucial decision to read this course was quite challenging but with 
+            adequate research and guidance I finally took this bold step.</p>
+        <p>As a choice of delicacy I prefer rice and that of sports is football.
+           Some of my hobbies are watching movies and a bit of reading.</p>
+    </section>
+
+    <!-- Aspirations Section -->
+    <section id="aspirations" class="aspirations">
+        <h2>My Aspirations</h2>
+
+        <div class="aspiration-card">
+            <img src="./Noah.jpg" alt="Noah Alorwu">
+            <div class="aspiration-info">
+                <h3>My Mentor</h3>
+                <p>This is Noah, a software developer and my mentor. He has been a guide ever since I decided to pursue this career choice.</p>
+                <a href="https://www.bing.com/search?q=Noah+Alorwu" target="_blank">More about Noah</a>
+            </div>
+        </div>
+
+        <div class="aspiration-card">
+            <img src="./Linus.jpg" alt="Linus Torvalds">
+            <div class="aspiration-info">
+                <h3>My Inspiration</h3>
+                <p>I look up to Linus Torvalds for his remarkable contributions to technology. His work inspires me to push boundaries in software development.</p>
+                <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">More about Linus Torvalds</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="mailto:edmundazaare18@gmail.com">Email Me</a></li>
+        </ul>
+    </section>
+
+    <footer>&copy; 2025 Edmund Azaare. All Rights Reserved.</footer>
+
+</body>
+</html>
